@@ -1,0 +1,25 @@
+/* Body */
+
+
+/* Project tile */
+.project___heading {
+    text-align: center;
+}
+
+.grid___container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 50px;
+    padding-left: 2em;
+    padding-right: 2em;
+    /* background-color: aqua; */
+}
+.first___div {
+    background-color: pink;
+}
+.second___div {
+    background-color: lightgreen;
+}
+.third___div {
+    background-color: yellow;
+}
