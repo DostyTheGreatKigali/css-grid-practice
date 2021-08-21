@@ -1,9 +1,40 @@
 /* Body */
-
+body {
+    margin: 0 auto;
+}
 
 /* Project tile */
 .project___heading {
     text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: lime;
+}
+
+.first___nav__ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min-content;
+    background-color: red;
+    justify-self: start;
+}
+.second___nav__ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min-content;
+    background-color: green;
+    justify-self: end; 
+}
+
+li {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    list-style: none;
 }
 
 .grid___container {
@@ -22,4 +53,14 @@
 }
 .third___div {
     background-color: yellow;
+}
+
+@media only screen and (max-width: 744px) {
+    nav {
+        display: grid;
+        grid-template-columns: auto-fit;
+        padding-right: 1em;
+        padding-left: 1em;
+        background-color: lime;
+    }
 }
